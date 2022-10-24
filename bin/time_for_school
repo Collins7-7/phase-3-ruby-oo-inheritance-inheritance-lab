@@ -8,13 +8,24 @@ steve = Student.new
 steve.first_name = "Steve"
 steve.last_name = "Jobs"
 
+jim  = User.new
+jim.first_name = "Jim"
+jim.last_name = "Carey"
+
 avi = Teacher.new
 avi.first_name = "Avi"
 avi.last_name = "Flombaum"
 
+collo = Student.new
+collo.first_name = "Collins"
+collo.last_name = "Kamau"
+
+collo_knowledge = avi.teach
+
+puts collo.learn(collo_knowledge)
 
 some_knowledge = avi.teach 
 
-steve.learn(some_knowledge)
+puts steve.learn(some_knowledge)
 
 puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
